@@ -6,7 +6,7 @@ import CarToyscard from "./CarToyscard";
 const Cartoys = () => {
     const[users,setusers]=useState([])
     useEffect(()=>{
-        fetch('https://assinement111-serverside-b5ym5v2a6-ronokjahan.vercel.app/user')
+        fetch('http://localhost:3000/user')
         .then(res=>res.json())
         .then(data=>setusers(data))
     },[])
