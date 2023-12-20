@@ -19,7 +19,7 @@ const Order = () => {
         
         }
         console.log(all);
-        fetch('http://localhost:3000/order',{
+        fetch('https://assinement111-serverside.vercel.app/user',{
           method:'POST',
           headers:{
             "Content-Type": "application/json"
