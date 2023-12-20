@@ -15,7 +15,7 @@ const Confarmorders = () => {
   }
   
    useEffect(()=>{
-    const url=`http://localhost:3000/order?email=${user?.email}`
+    const url=`https://assinement111-serverside.vercel.app/user?email=${user?.email}`
     fetch(url)
     .then(res=>res.json())
     .then(data=>setusers(data))
@@ -27,7 +27,7 @@ const Confarmorders = () => {
    const handeldelet=(id)=>{
      const proced=confirm('Are you delete')
      if(proced){
-       fetch(`http://localhost:3000/order/${id}`,{
+       fetch(`https://assinement111-serverside.vercel.app/user${id}`,{
          method:'DELETE'
        })
        .then(res=>res.json())
@@ -54,7 +54,7 @@ const Confarmorders = () => {
 
 
 const handelupdat=id=>{
-  fetch(`http://localhost:3000/order/${id}`,{
+  fetch(`https://assinement111-serverside.vercel.app/user${id}`,{
     method:'PATCH',
     headers:{
       "Content-Type": "application/json"
