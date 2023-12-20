@@ -15,7 +15,7 @@ const Confarmorders = () => {
   }
   
    useEffect(()=>{
-    const url=`http://localhost:3000/order?email=${user?.email}`
+    const url=`https://assinement111-serverside-b5ym5v2a6-ronokjahan.vercel.app/order?email=${user?.email}`
     fetch(url)
     .then(res=>res.json())
     .then(data=>setusers(data))
