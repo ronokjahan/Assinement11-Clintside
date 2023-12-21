@@ -41,12 +41,12 @@ const router = createBrowserRouter([
   {
     path:'Cardetails/:id',
     element:<CarDetails></CarDetails>,
-    loader:({params})=>fetch(`https://assinement111-serverside.vercel.app/user${params.id}`)
+    loader:({params})=>fetch(`https://assinement111-serverside.vercel.app/${params.id}`)
   },
   {
     path:'order/:id',
     element:<Order></Order>,
-    loader:({params})=>fetch(`https://assinement111-serverside.vercel.app/user${params.id}`)
+    loader:({params})=>fetch(`https://assinement111-serverside.vercel.app/${params.id}`)
   },
   {
     path:'orders',
